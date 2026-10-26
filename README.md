@@ -1,186 +1,137 @@
-# Skies of Arcadia Legends — HD Texture Pack
+# Skies of Arcadia Legends — HD Texture Pack (Dolphin Mod)
 
-[![Release](https://img.shields.io/badge/version-v0.2.0-blue.svg)](https://github.com/Shoopkid/skies-of-arcadia-legends-hd/releases)
-[![Platform](https://img.shields.io/badge/platform-Dolphin%20Emulator-0078D7.svg)](https://dolphin-emu.org/)
+[![Release](https://img.shields.io/badge/Release-v0.2.0-blue.svg)](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases)
+[![Platform](https://img.shields.io/badge/Platform-Dolphin%20Emulator-0078D7.svg)](https://dolphin-emu.org/)
 [![GameCube IDs](https://img.shields.io/badge/GameCube-GEAE01%20%7C%20GEAP8P%20%7C%20GEAJ8P-green.svg)](https://gametdb.com/GameCube/GEAE01)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSE)
-[![Website](https://img.shields.io/badge/website-skiesofarcadiahd.xyz-blueviolet.svg)](https://skiesofarcadiahd.xyz/)
-[![Archive.org](https://img.shields.io/badge/archive.org-v1%20release-black.svg)](https://archive.org/details/skies-of-arcadia-legends-hd-texture-pack-4x-upscaled-dds-v1)
 
-> A faithful, performance-optimized, and hand-curated 4x HD texture overhaul for the GameCube classic *Skies of Arcadia Legends*, tailored specifically for Dolphin Emulator.
-
----
-
-## Quick Links
-
-* 🌐 **Official Website:** [https://skiesofarcadiahd.xyz/](https://skiesofarcadiahd.xyz/)
-* 📦 **GitHub Releases:** [Releases & Downloads](https://github.com/Shoopkid/skies-of-arcadia-legends-hd/releases)
-* 🏛️ **Internet Archive Listing:** [archive.org Repository (v1 DDS)](https://archive.org/details/skies-of-arcadia-legends-hd-texture-pack-4x-upscaled-dds-v1)
-* 💾 **Google Drive Mirror:** Available through [skiesofarcadiahd.xyz](https://skiesofarcadiahd.xyz/)
-* 💬 **Dolphin Forums Project:** [Dolphin Community Thread](https://forums.dolphin-emu.org/Thread-skies-of-arcadia-hd-v0-06-june-27-2020) *(Original work by BigHead & FrozenWings)*
+> **Originally by Bighead & frozenwings, continued and curated by Shoopkid.**  
+> A clean, high-quality, zero-stutter HD texture overhaul for the GameCube classic *Skies of Arcadia Legends*, tailored specifically for Dolphin Emulator.
 
 ---
 
-## Table of Contents
-1. [Overview & Philosophy](#overview--philosophy)
-2. [Package Formats (DDS vs 4x PNG vs 1x PNG)](#package-formats)
-3. [Version History & Release Timeline](#version-history--release-timeline)
-4. [What's New in Version 0.2.0](#whats-new-in-version-020)
-5. [Upscale & Curation Methodology](#upscale--curation-methodology)
-6. [Installation Guide (Dolphin Emulator)](#installation-guide-dolphin-emulator)
-7. [Recommended Dolphin Graphics Settings](#recommended-dolphin-graphics-settings)
-8. [Known Limitations & Roadmap](#known-limitations--roadmap)
-9. [Contributing & Bug Reports](#contributing--bug-reports)
-10. [Legal Disclaimer & Licensing](#legal-disclaimer--licensing)
-11. [Credits & Appreciation](#credits--appreciation)
+## Downloads
 
----
+All texture packages are available for download as modular `.7z` archives on the **[GitHub Releases Page](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases/tag/v0.2.0)**:
 
-## Overview & Philosophy
-
-This project is a dedicated continuation, expansion, and modernization of the pioneering *Skies of Arcadia Legends* HD texture pack originally created by **BigHead** and **FrozenWings** on the Dolphin Emulator forums.
-
-Maintained and curated by **Shoopkid**, this project provides a clean, high-fidelity alternative to uncurated "AI slop" texture packs that have circulated the community. Rather than relying on raw, unchecked batch upscaling that washes out subtle lighting or hallucinates erroneous geometry, every texture family is carefully evaluated, hand-airbrushed in Photoshop, and calibrated against native GameCube rendering to preserve the authentic charm and atmosphere of the original Dreamcast and GameCube art direction.
-
----
-
-## Package Formats & Modular Downloads
-
-**Version 0.2.0 is an exclusively BC7 DDS release** focused on delivering a zero-fuss, stutter-free high-definition gameplay experience for Dolphin Emulator. *(Uncompressed PNG source master archives will be published separately in a future update).*
-
-All packages root to **`GEA/`** for zero-fuss drag-and-drop installation into Dolphin. You can install just one, or all of them:
-
-| Package | Archive Name | Download Size | Contents |
+| Package | Archive Name | Download Link | Description |
 | :--- | :--- | :--- | :--- |
-| **01. UI** | `01_SoAL_HD_UI_v0.2.0.7z` | **25 MB** | Menus, fonts, HUD command wheels, compass, crew portraits, dialogue boxes |
-| **02. Characters** | `02_SoAL_HD_Characters_v0.2.0.7z` | **1.00 GB** | All party members, costumes, weapons, NPCs, Armada, enemies, bosses, and Gigas (4,444 textures) |
-| **03a. Environment — World & Ships** | `03a_SoAL_HD_Environment_Overworld_Ships_v0.2.0.7z` | **801 MB** | Airships (Delphinus, Little Jack, etc.), skyboxes, weather, moons, discoveries, battle arenas |
-| **03b. Environment — Locations (Disc 1, Part 1)** | `03b_SoAL_HD_Environment_Locations_Disc1_Part1_v0.2.0.7z` | **1.77 GB** | Episodes 000–022: Pirate Isle, Shrine Island, Sailor's Island, Valua City/Catacombs, Maramba, Pyrynn, Horteka, Rixis |
-| **03c. Environment — Locations (Disc 1, Part 2)** | `03c_SoAL_HD_Environment_Locations_Disc1_Part2_v0.2.0.7z` | **1.58 GB** | Episodes 023–046: Nasrad, Daccat's Island, Grand Fortress, Dark Rift, Yafutoma, Mt. Kazai, World Flight |
-| **03d. Environment — Locations (Disc 2)** | `03d_SoAL_HD_Environment_Locations_Disc2_v0.2.0.7z` | **1.35 GB** | Episodes 048–075: Crescent Isle HQ upgrades, Lands of Ice, Glacia, Great Silver Shrine, Hydra, Soltis |
-| **04. Special Effects** | `04_SoAL_HD_Effects_v0.2.0.7z` | **208 MB** | Magic spells (all 6 elements), explosions, particle flares, weapon trails, hit sparks (3,017 textures) |
-| **05. Cutscene Artwork** | `05_SoAL_HD_Cutscene_Artwork_v0.2.0.7z` | **38 MB** | Full-screen story illustrations, Silvite flashbacks, opening sequence paintings (18 master paintings) |
-
-> [!TIP]
-> **Zero-Fuss Installation:** Every `.7z` package extracts into the exact same folder: `GEA/`. Select all downloaded `.7z` files at once in your download folder, right-click, and choose **7-Zip → Extract Here** directly into Dolphin's `Load/Textures/` directory. Dolphin will automatically merge them into `Load/Textures/GEA/` with zero manual folder sorting required!
+| **01. UI** | `01_SoAL_HD_UI_v0.2.0.7z` | [Download](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases/download/v0.2.0/01_SoAL_HD_UI_v0.2.0.7z) | Menus, text fonts, HUD command wheels, compass, crew portraits, dialogue boxes (25 MB) |
+| **02. Characters** | `02_SoAL_HD_Characters_v0.2.0.7z` | [Download](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases/download/v0.2.0/02_SoAL_HD_Characters_v0.2.0.7z) | All party members, costumes, weapons, NPCs, Armada, enemies, bosses, and Gigas (1.00 GB) |
+| **03a. Environment — World & Ships** | `03a_SoAL_HD_Environment_Overworld_Ships_v0.2.0.7z` | [Download](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases/download/v0.2.0/03a_SoAL_HD_Environment_Overworld_Ships_v0.2.0.7z) | Airships (Delphinus, Little Jack, etc.), skyboxes, weather, moons, discoveries, battle arenas (801 MB) |
+| **03b. Environment — Locations (Disc 1, Part 1)** | `03b_SoAL_HD_Environment_Locations_Disc1_Part1_v0.2.0.7z` | [Download](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases/download/v0.2.0/03b_SoAL_HD_Environment_Locations_Disc1_Part1_v0.2.0.7z) | Pirate Isle, Shrine Island, Sailor's Island, Valua City/Catacombs, Maramba, Pyrynn, Horteka, Rixis (1.77 GB) |
+| **03c. Environment — Locations (Disc 1, Part 2)** | `03c_SoAL_HD_Environment_Locations_Disc1_Part2_v0.2.0.7z` | [Download](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases/download/v0.2.0/03c_SoAL_HD_Environment_Locations_Disc1_Part2_v0.2.0.7z) | Nasrad, Daccat's Island, Grand Fortress, Dark Rift, Yafutoma, Mt. Kazai, World Flight (1.58 GB) |
+| **03d. Environment — Locations (Disc 2)** | `03d_SoAL_HD_Environment_Locations_Disc2_v0.2.0.7z` | [Download](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases/download/v0.2.0/03d_SoAL_HD_Environment_Locations_Disc2_v0.2.0.7z) | Crescent Isle HQ upgrades, Lands of Ice, Glacia, Great Silver Shrine, Hydra, Soltis (1.35 GB) |
+| **04. Special Effects** | `04_SoAL_HD_Effects_v0.2.0.7z` | [Download](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases/download/v0.2.0/04_SoAL_HD_Effects_v0.2.0.7z) | Magic spells (all 6 elements), explosions, particle flares, weapon trails, hit sparks (208 MB) |
+| **05. Cutscene Artwork** | `05_SoAL_HD_Cutscene_Artwork_v0.2.0.7z` | [Download](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases/download/v0.2.0/05_SoAL_HD_Cutscene_Artwork_v0.2.0.7z) | Full-screen story illustrations, Silvite flashbacks, opening sequence paintings (38 MB) |
 
 ---
 
-## Version History & Release Timeline
+## Overview
 
-### **Version 0.1.0 — Initial Public Release (May 19, 2026)**
-* Hosted on [Internet Archive](https://archive.org/details/skies-of-arcadia-legends-hd-texture-pack-4x-upscaled-dds-v1) and [skiesofarcadiahd.xyz](https://skiesofarcadiahd.xyz/) across six modular `.7z` packages (~17,000 textures).
-* Fully converted to Microsoft DirectX **BC7 DDS** for GPU prefetching.
-* *Identified Issues:* Community feedback noted that Fina suffered from color distortion in-game: her hands appeared abnormally dark and sunburned, and her front bangs were rendered in an oversaturated caramel tone that clashed with her blonde crown.
-* *Distribution Scope:* Distributed exclusively in BC7 DDS format; source PNGs were not released.
+This pack aims to provide a clean, high-quality replacement for uncurated "AI slop" texture packs that have circulated the community, prioritizing careful manual curation over raw, unchecked batch generation.
 
-### **Version 0.2.0 — Character Calibration & Source Release (October 2026)**
-* Complete visual calibration and color-space restoration for key party members and weapons.
-* Resolves all reported issues with Fina's skin tone, hair, and costume.
-* Restores missing specular highlights, metal wrap, and dynamic range to Aika's and Vyse's starting weapons.
-* Corrects Dolphin DDS mipmap pipeline (`-m 1` on non-mipmapped surfaces).
-* **First-Ever Public Release of Source PNG Packs:** Distributes raw 4x master PNGs and 1x native SD companion archives.
-* **GitHub Migration:** Project tracking, issue reports, and source releases transitioned to GitHub.
+Crucially, all textures have been fully converted into **Microsoft DirectX BC7 DDS** format. Unlike standard PNG texture packs that cause micro-stutters and consume large amounts of RAM while your CPU decodes them, these DDS files bypass the CPU completely and stream instantly into your GPU's VRAM with Dolphin prefetching.
+
+The result is a visually stunning experience with **zero stuttering** and highly efficient performance.
 
 ---
 
-## What's New in Version 0.2.0
+## Comparison Gallery
 
-* **Fina Skin Tone & Hand Correction:**
-  * Fixed an issue where Fina's hands rendered with an unnatural dark, sunburned/tanned tint compared to her pale face and shoulders.
-  * Rebalanced hand texture (`9b60b97d998b8fe3`) to a soft, living porcelain flesh tone matching her shoulders and chest.
-* **Fina Hair Color Calibration:**
-  * Eliminated severe two-tone contrast where Fina's front bangs rendered in dark caramel/amber while her crown was light creamy blonde.
-  * Re-calibrated across all 12 hair texture hashes (covering battle, village cutscenes, sailing models, and the Pirate Isle dining sequence) with a balanced warm golden-blonde palette matching in-game crown lighting without bleaching.
-* **Fina Sleeve & Costume Brightness:**
-  * Replaced murky grey and yellowed shadow artifacts on Fina's flared sleeves and upper arm band (`b9f42d7a04cc65dd`) with clean, luminous silk-white matching her dress.
-* **Aika Boomerang Handle Restoration:**
-  * Resolved a critical bug where Aika's starting Boomerang handle rendered as a solid "pitch-black blob" in-game.
-  * Reconstructed handle textures (`afc1f5d226e142c9` / `m_ad27b8959e0382cd`) by transferring original 1x specular amber highlights and warm lighting curves, combined with high-definition 4x pebbled leather grain and sharp silver rivets.
-* **Vyse Twin Cutlasses Restoration:**
-  * Fixed flat, dull visuals on Vyse's starting twin weapons inherited from legacy forum upscales:
-    * **Hilt (`51fdd4ba8ab2addb`):** Restored the missing polished silver/steel handle wrap (which had been mistakenly painted over with flat dark wood), enhanced wire grip metallic shine, and enriched warm wood grain.
-    * **Blade (`m_53338d40995df82b`):** Restored glowing blue-white specular cutting edge sheens and bright glints on all silver blade studs.
-* **Dolphin DDS Mipmap Fix:**
-  * Corrected mipmap level generation across the DDS pack: non-mipmapped surfaces now use strict single-mip flags (`-m 1`) to prevent Dolphin from rejecting replacement textures, while true mipmapped textures (`_m_`) retain full mip chains (`-m 0`).
+Here is a side-by-side showcase comparing the original GameCube textures with the new high-definition replacements:
+
+### Vyse
+| Original GameCube | HD Texture Pack (4x BC7 DDS) |
+| :---: | :---: |
+| ![Vyse Before](images/001-before.jpg) | ![Vyse After](images/001-after.jpg) |
+
+### Sailor's Island
+| Original GameCube | HD Texture Pack (4x BC7 DDS) |
+| :---: | :---: |
+| ![Sailor's Island Before](images/002-before.jpg) | ![Sailor's Island After](images/002-after.jpg) |
+
+### Ship Battle UI
+| Original GameCube | HD Texture Pack (4x BC7 DDS) |
+| :---: | :---: |
+| ![Ship Battle UI Before](images/003-before.jpg) | ![Ship Battle UI After](images/003-after.jpg) |
+
+### Characters and Environment
+| Original GameCube | HD Texture Pack (4x BC7 DDS) |
+| :---: | :---: |
+| ![Characters and Environment Before](images/004-before.jpg) | ![Characters and Environment After](images/004-after.jpg) |
+
+### Overworld & Skybox
+| Original GameCube | HD Texture Pack (4x BC7 DDS) |
+| :---: | :---: |
+| ![Overworld Before](images/006-before.jpg) | ![Overworld After](images/006-after.jpg) |
+
+### Alfonso & Imperial Uniforms
+| Original GameCube | HD Texture Pack (4x BC7 DDS) |
+| :---: | :---: |
+| ![Alfonso Before](images/008-before.jpg) | ![Alfonso After](images/008-after.jpg) |
+
+### Battle HUD
+| Original GameCube | HD Texture Pack (4x BC7 DDS) |
+| :---: | :---: |
+| ![Battle UI Before](images/009-before.jpg) | ![Battle UI After](images/009-after.jpg) |
 
 ---
 
-## Upscale & Curation Methodology
+## The Upscale Process
 
-Every asset in this pack undergoes a specialized, multi-stage restoration workflow rather than automated batch processing:
-* **Character Faces:** Upscaled using Topaz Gigapixel AI generative models (`Redefine` 2x followed by `High fidelity` 2x), followed by careful manual airbrushing in Photoshop to eliminate artifacts and preserve authentic facial expressions.
-* **Character Clothing & Costumes:** Upscaled using Topaz Gigapixel AI (`High fidelity` 4x) with manual localized detail recovery and fabric tone matching.
-* **Weapons & Props:** Hybrid detail reconstruction combining native GameCube specular maps with 4x micro-surface grain.
-* **UI Elements:** Recreated and redrawn from scratch for pixel-perfect sharpness.
+All texture assets are 4x their original size and perfectly optimized:
+
+* **UI:** Missing or compressed UI assets from the original Bighead and frozenwings project are recreated and redrawn from scratch for pixel-perfect clarity.
+* **Character Faces:** Upscaled using Topaz Gigapixel AI's *'Redefine'* generative model at 2x upscale, then *'High fidelity'* model at 2x upscale. Textures are then carefully airbrushed in Photoshop to remove artifacts and enhance detail.
+* **Character Clothing:** Upscaled using Topaz Gigapixel AI's *'High fidelity'* model at 4x upscale. Textures are then edited in Photoshop to enhance localized detail.
+* **Environment:** Environment assets are upscaled using Topaz Gigapixel AI's *'Recover'* generative model.
+* **Special Effects:** Special effect textures (clouds, fire, shadows, lighting) are upscaled 4x in Adobe Photoshop and an appropriate Gaussian Blur filter is applied to smooth out harsh pixelation.
 
 ---
 
-## Installation Guide (Dolphin Emulator)
+## How to Install on Dolphin Emulator
 
-### Step 1: Open Dolphin's Texture Directory
-Navigate to your Dolphin user directory:
+Follow these simple steps for zero-fuss, stutter-free performance:
+
+### 1. Download & Extract
+* Download your desired `.7z` packages from the table above or the [Releases page](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases).
+* Select all downloaded `.7z` files, right-click, and choose **7-Zip → Extract Here**.
+* You will see a single folder named **`GEA`** (the GameCube ID for *Skies of Arcadia Legends*).
+
+### 2. Move to Dolphin's Textures Directory
+Copy the extracted **`GEA`** folder and paste it into Dolphin's custom textures directory:
+* **Windows:** `Documents\Dolphin Emulator\Load\Textures\`
+* **macOS:** `~/Library/Application Support/Dolphin/Load/Textures/`
+* **Linux:** `~/.local/share/dolphin-emu/Load/Textures/`
+
+The final path must look like this:
 ```text
-<Dolphin Directory>/Load/Textures/
+Load/Textures/GEA/
+  ├── Characters/
+  ├── Cutscene Artwork/
+  ├── Environment/
+  ├── Special Effects/
+  └── UI/
 ```
-* **Windows Typical Path:** `C:\Users\<YourUsername>\Documents\Dolphin Emulator\Load\Textures\`
-* **macOS Typical Path:** `~/Library/Application Support/Dolphin/Load/Textures/`
-* **Linux Typical Path:** `~/.local/share/dolphin-emu/Load/Textures/`
 
-### Step 2: Install the Pack
-* Create a folder named **`GEA`** (the master GameCube ID for *Skies of Arcadia Legends*).
-  * *Note:* If you are playing the PAL European release, you may also name or link the folder as `GEAP8P`; for Japanese, use `GEAJ8P`. Modern Dolphin builds recognize `GEA` universally across regions.
-* Copy the contents of your chosen pack (e.g. `Characters`) into that folder:
-  ```text
-  Load/Textures/GEA/Characters/...
-  ```
+### 3. Enable Settings in Dolphin
+1. Open Dolphin Emulator and click **Graphics**.
+2. Go to the **Advanced** tab:
+   * Under **Utility**, check **Load Custom Textures**.
+   * Under **Utility**, check **Prefetch Custom Textures**. *(Crucial: Because these files are optimized BC7 DDS, prefetching instantly loads them into your GPU's VRAM on startup, completely eliminating in-game hitching).*
 
----
-
-## Recommended Dolphin Graphics Settings
-
-To get the most out of these textures with optimal performance:
-
-1. **Enable Custom Textures:**
-   * In Dolphin, go to **Options → Graphics Settings → Advanced**.
-   * Under the **Utility** section, check **Load Custom Textures**.
-   * *(Crucial for DDS)* Check **Prefetch Custom Textures**. Because BC7 DDS files are pre-compressed for GPU memory, prefetching loads them smoothly on launch without consuming excessive system RAM, completely eliminating in-game stutter.
-2. **Recommended Enhancements:**
-   * **Backend:** Vulkan or Direct3D 12
-   * **Internal Resolution:** 3x (1080p) or 4x (1440p)
-   * **Anisotropic Filtering:** 8x or 16x
+### Recommended Enhancements
+* **Graphics → General:** Backend set to **Vulkan** or **Direct3D 12**.
+* **Graphics → Enhancements:** Internal Resolution set to **3x (1080p)** or **4x (1440p)**.
+* **Graphics → Enhancements:** Anisotropic Filtering set to **8x** or **16x**.
 
 ---
 
-## Known Limitations & Roadmap
+## Credits & Thanks
 
-1. **Enemy UI Names:**
-   * Enemy UI nameplate assets are present in these archives, but only a portion are currently updated to HD quality. Updating and redrawing all remaining enemy UI nameplates is planned as the final milestone of the Character category.
-2. **Coverage & Missing Assets:**
-   * A small number of obscure character/bounty variants, background NPC assets, or rare cutscene models may not yet be covered in v0.2.0. These will be added incrementally as further environment and area decompilations are completed.
-
----
-
-## Contributing & Bug Reports
-
-Community feedback and contributions are welcome:
-* **Bug Reports:** If you spot an untextured character, a misaligned hash, or a visual lighting artifact, please open an [Issue on GitHub](https://github.com/Shoopkid/skies-of-arcadia-legends-hd/issues) with a screenshot and the relevant texture hash (e.g. `tex1_128x128_...`).
-* **Pull Requests:** Improved upscales or missing hash mappings are welcome via GitHub pull requests.
-
----
-
-## Legal Disclaimer & Licensing
-
-* **Intellectual Property:** *Skies of Arcadia* and *Skies of Arcadia Legends* are registered trademarks and copyright of **SEGA Corporation** and **Overworks**. This is an unofficial, non-commercial fan preservation project not affiliated with or endorsed by SEGA.
-* **No Game ISOs:** No copyrighted game ROMs, disc images, or retail executables are included in this repository.
-* **Mod License:** Community texture edits, upscaled source files, and scripts are licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](LICENSE) (CC BY-NC-ND 4.0).
-
----
-
-## Credits & Appreciation
-
-* **SEGA & Overworks:** For creating *Skies of Arcadia*, one of the greatest RPGs ever made.
-* **BigHead & FrozenWings:** For initiating the original Dolphin HD texture project and contributing foundational upscaled assets.
-* **Shoopkid:** Project curation, color-space & specular restorations, native ISO asset extraction, Topaz AI processing, and BC7 DDS conversion.
-* **Dolphin Emulator Development Team:** For the industry-leading GameCube/Wii emulation platform and custom texture engine.
-* **The Skies of Arcadia Community:** For keeping the skies alive.
+* **SEGA & Overworks:** For creating the timeless masterpiece that is *Skies of Arcadia*.
+* **Bighead & frozenwings:** For creating the original, foundational Dolphin HD texture project:  
+  [https://forums.dolphin-emu.org/Thread-skies-of-arcadia-hd-v0-06-june-27-2020](https://forums.dolphin-emu.org/Thread-skies-of-arcadia-hd-v0-06-june-27-2020)
+* **Shoopkid:** Continued, expanded, curated, and optimized into BC7 DDS.
+* **Dolphin Emulator Development Team:** For the industry-leading emulator and custom texture engine.
