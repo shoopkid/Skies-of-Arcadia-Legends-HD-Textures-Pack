@@ -1,0 +1,93 @@
+# ======================================================================
+# Skies of Arcadia Legends HD Texture Project - .gitignore
+# ======================================================================
+
+# --- OS Metadata ---
+[Dd]esktop.ini
+[Tt]humbs.db
+ehthumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+$RECYCLE.BIN/
+
+# --- GameCube ISOs & Disc Images ---
+*.iso
+*.ciso
+*.gcm
+*.wbfs
+*.rvz
+*.nkit.iso
+*.nkit.gcz
+*.wia
+
+# --- Compressed Archives (Host via GitHub Releases / Archive.org) ---
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.bz2
+
+# --- Raw Texture Dumps & Intermediate Decompilations ---
+Dumps/
+Redump/
+dumps/
+redump/
+scratch/
+temp/
+*.dump
+*.raw
+
+# --- Texture Working Directories (Binary assets distributed via GitHub Releases) ---
+Characters/
+Characters_1x/
+Characters_DDS/
+Cutscene Artwork/
+Environment/
+Special Effects/
+UI/
+DDS_Packages_v0.2.0/
+Release_DDS_v0.2.0/
+Skies of Arcadia Legends HD Texture Pack - DDS_4x/
+
+# --- Texture Working Backups & Scratch Comparisons ---
+*.orig
+*.orig.png
+*.orig.dds
+*.bak
+*.tmp
+*.temp
+*_test*
+*_comp*
+*.old
+
+# --- Scripts & Indices (Excluded from public repo) ---
+*.py
+*.json
+
+# --- Python Cache & Virtual Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# --- Local Scripts Cache & Recent State ---
+.recent_destinations.json
+*.log
+
+# --- IDE & Editor Artifacts ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+

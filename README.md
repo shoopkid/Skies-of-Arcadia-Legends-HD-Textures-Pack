@@ -44,15 +44,25 @@ Maintained and curated by **Shoopkid**, this project provides a clean, high-fide
 
 ---
 
-## Package Formats
+## Package Formats & Modular Downloads
 
-This release is distributed across three distinct formats tailored to different user needs:
+**Version 0.2.0 is an exclusively BC7 DDS release** focused on delivering a zero-fuss, stutter-free high-definition gameplay experience for Dolphin Emulator. *(Uncompressed PNG source master archives will be published separately in a future update).*
 
-| Package | Format | Primary Use Case | Key Highlights |
+All packages root to **`GEA/`** for zero-fuss drag-and-drop installation into Dolphin. You can install just one, or all of them:
+
+| Package | Archive Name | Download Size | Contents |
 | :--- | :--- | :--- | :--- |
-| **Characters (BC7 DDS)** | `.dds` (`BC7_UNORM`) | **Recommended for Playing** | • **~63% smaller size & VRAM footprint**<br>• Zero CPU decode stutters during battle swaps<br>• Direct GPU streaming with Dolphin prefetching<br>• Strict single-mip (`-m 1`) compatibility |
-| **Characters_4x (PNG)** | Lossless 32/24-bit `.png` ($512\times512+$) | **Archival & Modding Master** | • **First public release** of raw uncompressed 4x master assets<br>• Lossless master textures for texture artists and custom reskins |
-| **Characters_1x (PNG)** | Native GameCube `.png` ($128\times128$) | **SD Reference Companion** | • Exact 1:1 SD reference and hash verification<br>• Decompressed directly from retail GameCube PAL ISO (`.mld`) |
+| **01. UI** | `01_SoAL_HD_UI_v0.2.0.7z` | **25 MB** | Menus, fonts, HUD command wheels, compass, crew portraits, dialogue boxes |
+| **02. Characters** | `02_SoAL_HD_Characters_v0.2.0.7z` | **1.00 GB** | All party members, costumes, weapons, NPCs, Armada, enemies, bosses, and Gigas (4,444 textures) |
+| **03a. Environment — World & Ships** | `03a_SoAL_HD_Environment_Overworld_Ships_v0.2.0.7z` | **801 MB** | Airships (Delphinus, Little Jack, etc.), skyboxes, weather, moons, discoveries, battle arenas |
+| **03b. Environment — Locations (Disc 1, Part 1)** | `03b_SoAL_HD_Environment_Locations_Disc1_Part1_v0.2.0.7z` | **1.77 GB** | Episodes 000–022: Pirate Isle, Shrine Island, Sailor's Island, Valua City/Catacombs, Maramba, Pyrynn, Horteka, Rixis |
+| **03c. Environment — Locations (Disc 1, Part 2)** | `03c_SoAL_HD_Environment_Locations_Disc1_Part2_v0.2.0.7z` | **1.58 GB** | Episodes 023–046: Nasrad, Daccat's Island, Grand Fortress, Dark Rift, Yafutoma, Mt. Kazai, World Flight |
+| **03d. Environment — Locations (Disc 2)** | `03d_SoAL_HD_Environment_Locations_Disc2_v0.2.0.7z` | **1.35 GB** | Episodes 048–075: Crescent Isle HQ upgrades, Lands of Ice, Glacia, Great Silver Shrine, Hydra, Soltis |
+| **04. Special Effects** | `04_SoAL_HD_Effects_v0.2.0.7z` | **208 MB** | Magic spells (all 6 elements), explosions, particle flares, weapon trails, hit sparks (3,017 textures) |
+| **05. Cutscene Artwork** | `05_SoAL_HD_Cutscene_Artwork_v0.2.0.7z` | **38 MB** | Full-screen story illustrations, Silvite flashbacks, opening sequence paintings (18 master paintings) |
+
+> [!TIP]
+> **Zero-Fuss Installation:** Every `.7z` package extracts into the exact same folder: `GEA/`. Select all downloaded `.7z` files at once in your download folder, right-click, and choose **7-Zip → Extract Here** directly into Dolphin's `Load/Textures/` directory. Dolphin will automatically merge them into `Load/Textures/GEA/` with zero manual folder sorting required!
 
 ---
 
