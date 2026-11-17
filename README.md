@@ -1,4 +1,4 @@
-# Skies of Arcadia Legends — HD Texture Pack (Dolphin Mod)
+# Skies of Arcadia Legends — HD & 4K Texture Pack (Dolphin Mod)
 
 [![Release](https://img.shields.io/badge/Release-v0.3.1-blue.svg)](https://github.com/shoopkid/Skies-of-Arcadia-Legends-HD-Textures-Pack/releases)
 [![Platform](https://img.shields.io/badge/Platform-Dolphin%20Emulator-0078D7.svg)](https://dolphin-emu.org/)
@@ -6,7 +6,7 @@
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSE)
 
 > **Originally by Bighead & frozenwings, continued, expanded, and curated by Shoopkid.**  
-> A comprehensive, zero-stutter 4x HD texture overhaul for the GameCube classic *Skies of Arcadia Legends*, tailored specifically for Dolphin Emulator.
+> A comprehensive, zero-stutter 4x HD & 4K texture overhaul mod for the GameCube classic *Skies of Arcadia Legends*, tailored specifically for Dolphin Emulator (1080p, 1440p, 4K UHD).
 
 ---
 
