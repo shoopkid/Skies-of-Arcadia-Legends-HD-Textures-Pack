@@ -64,3 +64,35 @@ Version 0.3.1 is a cumulative patch update addressing visual inconsistencies, tr
 ### Installation Note
 
 Several character and UI folders have been reorganized into dedicated subfolders for consistency. When updating from v0.3.0, please delete your existing `GEA/01` (Characters) and `GEA/07` (UI) folders before extracting the v0.3.1 archives to prevent duplicate files.
+
+---
+
+### Downloads & Package Breakdown
+
+Every package extracts into a top-level `GEA` folder for drag-and-drop installation into Dolphin's `Load/Textures/` directory:
+
+| Package | Archive | Compressed Size | Scope |
+| :--- | :--- | :---: | :--- |
+| **01. Characters & Enemies** | `01_SoAL_HD_Characters_and_Enemies_v0.3.1.7z` | 1.38 GB | Playable party members, battle costumes, weapons, Admirals, NPCs, enemies, Gigas, bosses |
+| **02a. Towns & Ports (Part 1)** | `02a_SoAL_HD_Towns_and_Ports_Part1_v0.3.1.7z` | 1.28 GB | Pirate Isle, Sailor's Island, Lower City Valua, Maramba City, Horteka, Nasrad |
+| **02b. Towns & Ports (Part 2)** | `02b_SoAL_HD_Towns_and_Ports_Part2_v0.3.1.7z` | 1.33 GB | Crescent Isle HQ, Esperanza, Yafutoma, Tenkou Island, Great Silver Shrine |
+| **03a. Dungeons & Ruins (Part 1)** | `03a_SoAL_HD_Dungeons_and_Ruins_Part1_v0.3.1.7z` | 1.15 GB | Alfonso's Ship, Shrine Island, Catacombs, Upper City, Pyrynn, Moonstone Mtn, Rixis, Daccat |
+| **03b. Dungeons & Ruins (Part 2)** | `03b_SoAL_HD_Dungeons_and_Ruins_Part2_v0.3.1.7z` | 1.44 GB | Grand Fortress, Mt. Kazai, Dark Rift, Glacia, Tartas, Dangral Island, Vortex, Hydra, Soltis |
+| **04. Ships & Ship Battles** | `04_SoAL_HD_Ships_and_Ship_Battles_v0.3.1.7z` | 607 MB | Delphinus, Little Jack, Albatross, Armada vessels, bridge interiors, combat stages |
+| **05. Overworld** | `05_SoAL_HD_Overworld_v0.3.1.7z` | 143 MB | Skyboxes, cloud layers, landmasses, floating islands, discoveries, rifts |
+| **06. Battle Arenas & Effects** | `06_SoAL_HD_Battle_Arenas_and_Effects_v0.3.1.7z` | 945 MB | Combat stages, Moon magic (all 6 elements), S-Crafts, weapon trails, particles |
+| **07. UI, Menus & Fonts** | `07_SoAL_HD_UI_Menus_and_Fonts_v0.3.1.7z` | 46.3 MB | Dialogue fonts, compass, HUD command wheels, party status screens, crew cards, combat portraits |
+| **08. Cutscenes & Ending** | `08_SoAL_HD_Cutscenes_and_Ending_v0.3.1.7z` | 815 MB | Intro Movies A & B, story flashback artwork, mid-ocean events, endgame, epilogue |
+
+**Total Installed Footprint**: ~11.8 GB (BC7 DDS)  
+**Total Download Footprint**: 9.07 GB across 10 modular archives
+
+---
+
+### Installation Instructions
+1. Download desired `.7z` packages.
+2. Extract using **7-Zip** (`Extract Here`). All archives extract into a unified `GEA` directory.
+3. Place `GEA` into Dolphin's texture directory: `Load/Textures/GEA`.
+4. In Dolphin:
+   - **Graphics -> Advanced**: Enable **Load Custom Textures** and **Prefetch Custom Textures**.
+   - **Graphics -> Enhancements**: Internal Resolution 3x (1080p) or 4x (1440p); Anisotropic Filtering 16x; Enable **Arbitrary Mipmap Detection** and **Force 24-Bit Color**; Uncheck **Disable Fog**.
