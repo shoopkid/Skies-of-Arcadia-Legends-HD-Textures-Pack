@@ -42,6 +42,11 @@ temp/
 *.raw
 
 # --- Texture Working Directories (Binary assets distributed via GitHub Releases) ---
+01_Sources_and_Dumps/
+02_Reference_Packs/
+03_Creative_Assets/
+04_Releases_and_Distribution/
+05_Tools_and_Scripts/
 Characters/
 Characters_1x/
 Characters_DDS/
